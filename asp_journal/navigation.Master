@@ -1,0 +1,215 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="navigation.master.vb" Inherits="asp_journal.navigation" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   
+    <title>BOOKIE</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        a{
+            text-decoration:none;
+            color:inherit;
+        }
+        .green{
+            color:#064532;
+        }
+        .bggreen{
+            background-color:#F1592B;
+            color:white;
+            font-weight:bold;
+        }
+        .bggreen:hover{
+            background-color:#F1592B;
+            color:white;
+            font-weight:bold;
+        }
+        .orange{
+            color:#F1592B;
+        }
+        .nmhover:hover{
+            color:#F1592B;
+        }
+        .mbtn{
+            background-color:#F1592B;
+            color:white;
+            border:1px solid #F1592B;
+        }
+        .mbtn:hover {
+            background-color: #064532;
+            color: white;
+            border:1px solid #064532;
+        }
+        .auto-style3 {
+            width: 146px;
+        }
+        .auto-style4 {
+            width: 185px;
+        }
+        .auto-style5 {
+            width: 111px;
+        }
+        .auto-style6 {
+            width: 110px;
+        }
+        .auto-style7 {
+            width: 124px;
+        }
+        .auto-style8 {
+            width: 100%;
+            height: 83px;
+        }
+        .auto-style9 {
+            width: 31px;
+        }
+    </style>
+</head>
+<body>
+        
+    <form id="form1" runat="server">
+    <table style="background-color:#064532;" class="auto-style8">
+        <tr>
+            <td class="auto-style9">
+                &nbsp;</td>
+            <td class="auto-style5">
+                <asp:LinkButton ID="lbtnhome" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="False" ForeColor="White">HOME</asp:LinkButton>
+            </td>
+            <td class="auto-style7">
+                <asp:LinkButton ID="lbtnabout" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="False" ForeColor="White">ABOUT</asp:LinkButton>
+            </td>
+            <td class="auto-style6">
+                <asp:LinkButton ID="lbtnshop" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="False" ForeColor="White">SHOP</asp:LinkButton>
+            </td>
+            <td class="auto-style3">
+                <asp:LinkButton ID="lbtncontact" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="False" ForeColor="White">CONTACT</asp:LinkButton>
+            </td>
+            <td class="auto-style4">
+                <asp:LinkButton ID="lbtnprofile" runat="server" Font-Bold="True" Font-Size="Large" Font-Underline="False" ForeColor="White">PROFILE</asp:LinkButton>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+     <footer
+          class="text-center text-lg-start text-dark"
+          style="background-color: #ECEFF1"
+          >
+    <section
+             class="d-flex justify-content-between p-4 text-white"
+             style="background-color: #064532"
+             >
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Bookie</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Find Yourself in Our Shelves. Enter as a Guest, Leave as a Storyteller.
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Categories</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="shop.aspx" class="text-dark">Advanture</a>
+            </p>
+            <p>
+              <a href="shop.aspx" class="text-dark">Classic Fiction</a>
+            </p>
+            <p>
+              <a href="shop.aspx" class="text-dark">Romance</a>
+            </p>
+            <p>
+              <a href="shop.aspx" class="text-dark">Fantasy</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="profile.aspx" class="text-dark">Your Profile</a>
+            </p>
+            <p>
+              <a href="home.aspx" class="text-dark">Home Page</a>
+            </p>
+            <p>
+              <a href="aboutus.aspx" class="text-dark">About Us</a>
+            </p>
+            <p>
+              <a href="shop.aspx" class="text-dark">Buy Now</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> 123, ABC Road, Surat, India</p>
+            <p><i class="fas fa-envelope mr-3"></i> info.bookie@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> (91) 9537295257</p>
+            <p><i class="fas fa-print mr-3"></i> (91) 7952484528</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2022 Copyright:
+      <a class="text-dark" href="home.aspx"
+         >Bookie.com</a
+        >
+    </div>
+  </footer>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="admin.master.vb" Inherits="asp_journal.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <title>BOOKIE-Admin</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .link{
+            color:white;
+            text-decoration:none;
+        }
+        .green{
+            color:#064532;
+        }
+        .auto-style2 {
+            width: 149px;
+        }
+        .auto-style3 {
+            width: 100%;
+            height: 65px;
+        }
+        .auto-style4 {
+            width: 731px;
+        }
+        .auto-style5 {
+            text-align: center;
+        }
+        .auto-style6 {
+            width: 139px;
+        }
+        .auto-style7 {
+            width: 28px;
+        }
+        .auto-style8 {
+            width: 133px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="background-color:#064532;" class="auto-style3">
+                <tr>
+                    <td class="auto-style7">
+                        &nbsp;</td>
+                    <td class="auto-style6">
+                        <asp:HyperLink CssClass="link" ID="HyperLink4" runat="server" Font-Bold="True" Font-Size="X-Large" NavigateUrl="~/homea.aspx">Home</asp:HyperLink>
+                    </td>
+                    <td class="auto-style8">
+                        <asp:HyperLink CssClass="link" ID="HyperLink1" runat="server" Font-Bold="True" Font-Size="X-Large" NavigateUrl="~/usera.aspx">Users</asp:HyperLink>
+                    </td>
+                    <td class="auto-style2">
+                        <asp:HyperLink CssClass="link" ID="HyperLink2" runat="server" Font-Bold="True" Font-Size="X-Large" NavigateUrl="~/ordera.aspx">Orders</asp:HyperLink>
+                    </td>
+                    <td class="auto-style4">
+                        <asp:HyperLink CssClass="link" ID="HyperLink3" runat="server" Font-Bold="True" Font-Size="X-Large" NavigateUrl="~/booka.aspx">Books</asp:HyperLink>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:Button ID="Button1" runat="server" BackColor="#064532" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Text="Logout" Width="130px" Height="50px" BorderColor="White" />
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
